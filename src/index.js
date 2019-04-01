@@ -146,20 +146,15 @@ class UserForm extends React.Component {
         <form onSubmit={this.handleSubmit}>
         <div className="form-group">
         <label>First Name</label>
-        <input type="text" className="form-control" autoComplete='given-name'
-        name="fname" id="fname" placeholder="First Name" value={this.state.fname} onChan
-       ge={this.handleInputChange}/>
+        <input type="text" className="form-control" autoComplete='given-name' name="fname" id="fname" placeholder="First Name" value={this.state.fname} onChange={this.handleInputChange}/>
         </div>
         <div className="form-group">
         <label htmlFor="lname">Last Name</label>
-        <input type="text" className="form-control" autoComplete='family-name
-       ' name="lname" id="lname" placeholder="Last Name" value={this.state.lname} onChan
-       ge={this.handleInputChange}/>
+        <input type="text" className="form-control" autoComplete='family-name' name="lname" id="lname" placeholder="Last Name" value={this.state.lname} onChange={this.handleInputChange}/>
         </div>
         <div className="form-group">
         <label htmlFor="email">Email address</label>
-        <input type="email" className="form-control" autoComplete='email' nam
-       e="email" id="email" placeholder="name@example.com" value={this.state.email} onChange={this.handleInputChange}/>
+        <input type="email" className="form-control" autoComplete='email' name="email" id="email" placeholder="name@example.com" value={this.state.email} onChange={this.handleInputChange}/>
        </div>
        {this.renderButtons()}
        </form>
